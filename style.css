@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    scroll-behavior: smooth;
+    background-color: #eaebf5;
+    color: #111;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+.xyz{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 1;
+    width: 510px;
+    height: 600px;
+    margin-right: 8rem;
+    background-image: url('./assets/hand.png');
+    background-size: cover;
+    z-index: 1;
+    margin-left: 1rem;
+}
+
+
+/* Navbar styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo img {
+    max-width: 100%;
+    margin-left: 1rem;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    border-radius: 6px;
+    background-color: #f7f7fb;
+    opacity: 0.9;
+    gap: 1rem;
+    z-index: 2; /* Set a higher z-index */
+}
+
+.menu li {
+    margin: 0 0px;
+    padding: 1px;
+    
+}
+
+.menu a {
+    border-radius: 12px;
+    padding: 3px;
+    transition: background-color 0.3s ease;
+    color: #4d1559;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.menu a:hover,
+.menu a:focus{
+    background-color: #4d1559;
+    color: #fff;
+}
+.shop {
+    margin-right: 2rem;
+    display: flex;
+    align-items: center;
+    z-index: 2; /* Set a higher z-index */
+}
+
+.shop img {
+    margin-right: 5px;
+    width: 30px;
+    background-color: #4d1559;
+    border-radius: 20px;
+}
+
+.shop a {
+    font-size: 12px;
+    font-weight: normal;
+    padding: 5px;
+    background-color: #4d1559;
+    color: #fff;
+    border-radius: 14px;
+}
+
+/* Hero Section */
+.hero{
+    line-height: 1;
+}
+.hero h1{
+    font-size: 8rem;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    position: relative;
+    z-index: 2;
+    color: #4d1559;
+}
+.hero .right p{
+    font-size: 30px;
+    font-weight: bold;
+    color: #8d9cbb;
+}
+
+.hero .left{
+    text-align: left;
+}
+
+.hero .right{
+    text-align: right;
+    margin-right: 1rem;
+}
+
+.hero .row2,.row3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row2 .card{
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center horizontally */
+    margin-left: 2rem;
+    margin-top: 3rem;
+    background-color: #7084a6;
+    border-radius: 10px;
+    width: 140px;
+    height: 140px;
+}
+
+.card img {
+    height: 100%;
+    width: 90%;
+    object-fit: cover;
+}
+
+.row3 .card1{
+    margin-left: 2rem;
+    color: #fff;
+    background-color: #7084a6;
+    border-radius: 10px;
+    width: 140px;
+    height: 140px;
+    padding: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+.row3 .card1 .figure{
+    font-size: 24px;
+    padding: 5px;
+}
+
+.row3 .card1 .msg{
+    font-size: 10px;
+    padding: 5px;
+    font-weight: 200;
+}
+
+.row3 .card1 .join-button{
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 15px;
+    border: none;
+}
+
+.big-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #7084a6;
+    border-radius: 12px;
+    width: 12rem;
+    height: 12rem;
+    margin-right: 2rem;
+    position: relative;
+    font-weight: 300;
+}
+
+.big-card img {
+    height: 100%;
+    width: 90%;
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+.big-card::before,
+.big-card::after {
+    content: '';
+    position: absolute;
+    color: #fff;
+}
+
+.big-card::before {
+    top: 10px;
+    right: 10px;
+    content: 'NEW SET';
+}
+
+.big-card::after {
+    bottom: 10px;
+    left: 10px;
+    content: 'ADIDAS DRESS';
+}
+
+.big-card::before,
+.big-card::after {
+    font-size: 0.8rem;
+}
+
+.top-right-below {
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    font-size: 0.8rem;
+    color: #fff;
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 0.8rem;
+    color: #fff;
+}
+
+
+/* Footer styles */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-top: 1rem;
+    opacity: 0.8;
+    margin-left: 1.5rem;
+    margin-right: 2rem;
+}
+
+.footer-left{
+    font-size: 12px;
+}
+
+.footer-center {
+    display: flex;
+    justify-content: space-between;
+    gap: 6px;
+}
+
+.footer-center button {
+    border: none;
+    background-color: #fff;
+    color: #4d1559; 
+    padding: 9px;
+    border-radius: 15px;
+    font-weight: bold;
+
+}
+
+
+
+
+.footer-right .arrows i
+{
+    color: #4d1559;
+    background-color: #fff;
+    border-radius: 20px;
+    width: 30px;
+    padding: 8px;
+}
+
+.footer-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.pagination {
+    display: flex;
+}
+
+.pagination span {
+    width: 15px;
+    height: 2px;
+    margin: 0 3px;
+    background-color: #fff;
+}
+
+.pagination .first{
+    background-color: #4d1559; 
+
+
+}
