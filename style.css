@@ -41,8 +41,6 @@ li {
     margin-left: 1rem;
 }
 
-
-/* Navbar styles */
 nav {
     display: flex;
     justify-content: space-between;
@@ -62,7 +60,7 @@ nav {
     background-color: #f7f7fb;
     opacity: 0.9;
     gap: 1rem;
-    z-index: 2; /* Set a higher z-index */
+    z-index: 2; 
 }
 
 .menu li {
@@ -89,7 +87,7 @@ nav {
     margin-right: 2rem;
     display: flex;
     align-items: center;
-    z-index: 2; /* Set a higher z-index */
+    z-index: 2; 
 }
 
 .shop img {
@@ -108,7 +106,6 @@ nav {
     border-radius: 14px;
 }
 
-/* Hero Section */
 .hero{
     line-height: 1;
 }
@@ -144,7 +141,7 @@ nav {
 .row2 .card{
     display: flex;
     align-items: center;
-    justify-content: center; /* Center horizontally */
+    justify-content: center;
     margin-left: 2rem;
     margin-top: 3rem;
     background-color: #7084a6;
@@ -250,7 +247,6 @@ nav {
 }
 
 
-/* Footer styles */
 footer {
     display: flex;
     justify-content: space-between;
@@ -282,9 +278,6 @@ footer {
 
 }
 
-
-
-
 .footer-right .arrows i
 {
     color: #4d1559;
@@ -314,6 +307,4 @@ footer {
 
 .pagination .first{
     background-color: #4d1559; 
-
-
 }
